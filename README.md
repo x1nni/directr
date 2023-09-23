@@ -13,7 +13,8 @@ The main purpose of this script is to streamline the process of creating VMs and
 1. Clone this repo or download it as a .zip
 2. Open and edit the example csv with a WYSIWYG spreadsheet editor (.e.g. Excel)
 3. Save the edited csv as ``directr.csv`` in the same directory as the script
-4. Run the script!
+4. Open the script in a text editor and adjust the variables at the top of the file to match your environment
+5. Run the script!
 
 ## Credits
 - [VMPros](https://blog.vmpros.nl/2011/01/16/vmware-deploy-multiple-vms-from-template-with-powercli/)
