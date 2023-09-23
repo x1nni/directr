@@ -11,6 +11,7 @@ $defaultFirstName = "CyberSchool" # Standardized first name for student accounts
 $defaultLastName = "Student" # Standardized last name for student accounts.
 $defaultStudentGroup = "CyberSchool Students" # Global permissions group to add all student accounts to. 
 
+# Get VM deployment settings from the deployment CSV and set baselines for all VMs
 try{
     $csv = Import-Csv -Path $PSScriptRoot\directr.csv
 }
