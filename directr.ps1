@@ -29,7 +29,7 @@ Function MakeVMs {
  |_____  |    \_ |______ |     |    |    |______        \/   |  |  | ______|
                                                                             
 " -ForegroundColor Cyan
-    Write-Host "You are about to create the VMs listed in the CSV with the settings you specified.$\nYou cannot easily stop the creation process once it has begun. Ensure your settings are correct and continue."
+    Write-Host "You are about to create the VMs listed in the CSV with the settings you specified. You cannot easily stop the creation process once it has begun. Ensure your settings are correct and continue."
     pause
     foreach ($vm in $csv) {
         Write-Host "Creating $($vm.Name) with the following settings:" -foreground green
