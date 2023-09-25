@@ -93,7 +93,8 @@ Function MakeSnapshot {
     foreach ($vm in $csv) {
         Write-Host "Creating snapshot of $($vm.Name)" -foreground green
         $name = Get-VM -Name $vm.Name
-        New-Snapshot -VM $name -Name $snapshotname -Memory $true
+        $date = Get-Date
+        New-Snapshot -VM $name -Name $date -Memory $true
     }
     Write-Host "Done! Please check for errors in the output before continuing." -ForegroundColor Green
     Pause
